@@ -1,0 +1,25 @@
+{
+  "accuracy": 0.9021118765842963,
+  "precision": 0.9120789549049413,
+  "recall": 0.82804,
+  "f1": 0.8680301489627121,
+  "roc_auc": 0.9698867297661755,
+  "pr_auc": 0.9082820571534928,
+  "confusion_matrix": [
+    [
+      74615,
+      3991
+    ],
+    [
+      8598,
+      41402
+    ]
+  ],
+  "recall_by_attack_class": {
+    "DDoS": 0.6283,
+    "PortScan": 0.999,
+    "Web Attack \ufffd Brute Force": 0.0,
+    "Web Attack \ufffd Sql Injection": 0.2,
+    "Web Attack \ufffd XSS": 0.0102
+  }
+}

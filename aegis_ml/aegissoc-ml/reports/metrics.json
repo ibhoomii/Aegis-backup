@@ -1,0 +1,44 @@
+{
+  "accuracy": 0.7769251242015613,
+  "precision": 0.9342310260405075,
+  "recall": 0.654172835658069,
+  "f1": 0.769512809936294,
+  "roc_auc": 0.9377970154258507,
+  "pr_auc": 0.9510492749719133,
+  "confusion_matrix": [
+    [
+      9120,
+      591
+    ],
+    [
+      4438,
+      8395
+    ]
+  ],
+  "recall_by_attack_family": {
+    "dos": 0.7843163538873995,
+    "probe": 0.9648905410987195,
+    "r2l": 0.0658578856152513,
+    "u2r": 0.26865671641791045
+  },
+  "recall_on_novel_unseen_attack_types": 0.6573333333333333,
+  "novel_attack_types_in_test_set": [
+    "apache2",
+    "httptunnel",
+    "mailbomb",
+    "mscan",
+    "named",
+    "processtable",
+    "ps",
+    "saint",
+    "sendmail",
+    "snmpgetattack",
+    "snmpguess",
+    "sqlattack",
+    "udpstorm",
+    "worm",
+    "xlock",
+    "xsnoop",
+    "xterm"
+  ]
+}

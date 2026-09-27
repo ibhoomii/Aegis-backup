@@ -1,0 +1,267 @@
+{
+  "model_type": "IsolationForest",
+  "sklearn_training": "semi-supervised (trained on BENIGN flows only)",
+  "dataset": "CICIDS2017 (Canadian Institute for Cybersecurity)",
+  "n_estimators": 400,
+  "random_state": 42,
+  "feature_count": 44,
+  "feature_names": [
+    "Flow_Duration",
+    "Total_Fwd_Packets",
+    "Total_Length_of_Fwd_Packets",
+    "Fwd_Packet_Length_Max",
+    "Fwd_Packet_Length_Min",
+    "Fwd_Packet_Length_Mean",
+    "Bwd_Packet_Length_Max",
+    "Bwd_Packet_Length_Min",
+    "Bwd_Packet_Length_Mean",
+    "Bwd_Packet_Length_Std",
+    "Flow_Bytes/s",
+    "Flow_Packets/s",
+    "Flow_IAT_Mean",
+    "Flow_IAT_Std",
+    "Flow_IAT_Max",
+    "Flow_IAT_Min",
+    "Fwd_IAT_Mean",
+    "Fwd_IAT_Std",
+    "Fwd_IAT_Min",
+    "Bwd_IAT_Mean",
+    "Bwd_IAT_Std",
+    "Fwd_PSH_Flags",
+    "Bwd_PSH_Flags",
+    "Fwd_URG_Flags",
+    "Bwd_URG_Flags",
+    "Bwd_Packets/s",
+    "Min_Packet_Length",
+    "Max_Packet_Length",
+    "Packet_Length_Mean",
+    "Packet_Length_Variance",
+    "FIN_Flag_Count",
+    "RST_Flag_Count",
+    "PSH_Flag_Count",
+    "ACK_Flag_Count",
+    "URG_Flag_Count",
+    "CWE_Flag_Count",
+    "Down/Up_Ratio",
+    "Fwd_Avg_Bytes/Bulk",
+    "Fwd_Avg_Packets/Bulk",
+    "Fwd_Avg_Bulk_Rate",
+    "Bwd_Avg_Bytes/Bulk",
+    "Bwd_Avg_Packets/Bulk",
+    "Bwd_Avg_Bulk_Rate",
+    "min_seg_size_forward"
+  ],
+  "correlation_prune_threshold": 0.95,
+  "baseline_stats": {
+    "Flow_Duration": {
+      "mean": 13073870.50705,
+      "std": 32016407.66676748
+    },
+    "Total_Fwd_Packets": {
+      "mean": 9.846166666666667,
+      "std": 649.4149678225622
+    },
+    "Total_Length_of_Fwd_Packets": {
+      "mean": 940.3369333333334,
+      "std": 5937.824665439796
+    },
+    "Fwd_Packet_Length_Max": {
+      "mean": 438.0586333333333,
+      "std": 1482.2275363013448
+    },
+    "Fwd_Packet_Length_Min": {
+      "mean": 31.979316666666666,
+      "std": 125.67770010469155
+    },
+    "Fwd_Packet_Length_Mean": {
+      "mean": 130.8631973336781,
+      "std": 396.394582748807
+    },
+    "Bwd_Packet_Length_Max": {
+      "mean": 377.18626666666665,
+      "std": 801.2232402288018
+    },
+    "Bwd_Packet_Length_Min": {
+      "mean": 49.783366666666666,
+      "std": 70.5375148107881
+    },
+    "Bwd_Packet_Length_Mean": {
+      "mean": 151.328665235538,
+      "std": 275.3010651065533
+    },
+    "Bwd_Packet_Length_Std": {
+      "mean": 114.8196349850226,
+      "std": 267.21942720517364
+    },
+    "Flow_Bytes/s": {
+      "mean": 1873353.4615488036,
+      "std": 32279888.52315287
+    },
+    "Flow_Packets/s": {
+      "mean": 51705.34749913837,
+      "std": 223825.10781644128
+    },
+    "Flow_IAT_Mean": {
+      "mean": 944095.9554831043,
+      "std": 3629236.853378337
+    },
+    "Flow_IAT_Std": {
+      "mean": 1916605.5580629979,
+      "std": 6008795.024514252
+    },
+    "Flow_IAT_Max": {
+      "mean": 5731722.99795,
+      "std": 16708737.864005176
+    },
+    "Flow_IAT_Min": {
+      "mean": 93571.33646666666,
+      "std": 2076776.115626597
+    },
+    "Fwd_IAT_Mean": {
+      "mean": 1986131.2449913356,
+      "std": 8784762.498842685
+    },
+    "Fwd_IAT_Std": {
+      "mean": 1849416.4719602417,
+      "std": 6461215.9602126675
+    },
+    "Fwd_IAT_Min": {
+      "mean": 940989.9379333333,
+      "std": 8252491.566151089
+    },
+    "Bwd_IAT_Mean": {
+      "mean": 1860332.341810117,
+      "std": 8705057.69457065
+    },
+    "Bwd_IAT_Std": {
+      "mean": 1516918.2488986945,
+      "std": 5092059.368787535
+    },
+    "Fwd_PSH_Flags": {
+      "mean": 0.053783333333333336,
+      "std": 0.22559152151872178
+    },
+    "Bwd_PSH_Flags": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "Fwd_URG_Flags": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "Bwd_URG_Flags": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "Bwd_Packets/s": {
+      "mean": 6202.665849159851,
+      "std": 41709.479179931026
+    },
+    "Min_Packet_Length": {
+      "mean": 20.36855,
+      "std": 24.87685340220409
+    },
+    "Max_Packet_Length": {
+      "mean": 692.3582166666666,
+      "std": 1614.0206312830878
+    },
+    "Packet_Length_Mean": {
+      "mean": 133.13128123637944,
+      "std": 234.0443518222937
+    },
+    "Packet_Length_Variance": {
+      "mean": 277759.7810875305,
+      "std": 1256315.0169129327
+    },
+    "FIN_Flag_Count": {
+      "mean": 0.012633333333333333,
+      "std": 0.11168679474863734
+    },
+    "RST_Flag_Count": {
+      "mean": 0.0004333333333333333,
+      "std": 0.020812322666354865
+    },
+    "PSH_Flag_Count": {
+      "mean": 0.22821666666666668,
+      "std": 0.4196864964885231
+    },
+    "ACK_Flag_Count": {
+      "mean": 0.3212333333333333,
+      "std": 0.46695408017359924
+    },
+    "URG_Flag_Count": {
+      "mean": 0.16355,
+      "std": 0.3698698116382205
+    },
+    "CWE_Flag_Count": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "Down/Up_Ratio": {
+      "mean": 0.8814,
+      "std": 1.0922853373184906
+    },
+    "Fwd_Avg_Bytes/Bulk": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "Fwd_Avg_Packets/Bulk": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "Fwd_Avg_Bulk_Rate": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "Bwd_Avg_Bytes/Bulk": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "Bwd_Avg_Packets/Bulk": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "Bwd_Avg_Bulk_Rate": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "min_seg_size_forward": {
+      "mean": 24.9031,
+      "std": 6.268497849651715
+    }
+  },
+  "operating_threshold": -0.039490902518497434,
+  "target_fpr": 0.05,
+  "risk_score_calibration": {
+    "score_low": -0.14692686344460287,
+    "score_high": 0.1294672565748941
+  },
+  "training_rows_used": 60000,
+  "calibration_rows_used": 78606,
+  "independent_test_benign_rows_used": 78606,
+  "test_metrics": {
+    "accuracy": 0.9021118765842963,
+    "precision": 0.9120789549049413,
+    "recall": 0.82804,
+    "f1": 0.8680301489627121,
+    "roc_auc": 0.9698867297661755,
+    "pr_auc": 0.9082820571534928,
+    "confusion_matrix": [
+      [
+        74615,
+        3991
+      ],
+      [
+        8598,
+        41402
+      ]
+    ],
+    "recall_by_attack_class": {
+      "DDoS": 0.6283,
+      "PortScan": 0.999,
+      "Web Attack \ufffd Brute Force": 0.0,
+      "Web Attack \ufffd Sql Injection": 0.2,
+      "Web Attack \ufffd XSS": 0.0102
+    }
+  }
+}

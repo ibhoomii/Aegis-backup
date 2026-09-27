@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+* {
+  border-color: theme("colors.line.DEFAULT");
+}
+html.dark * {
+  border-color: theme("colors.line.dark");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-body antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html.dark body {
+  @apply bg-void text-paper;
+}
+
+::selection {
+  background-color: #e8471c;
+  color: #f6f4ef;
+}
+
+/* Keyboard focus visibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #e8471c;
+  outline-offset: 3px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #dedacd;
+  border-radius: 0;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #262b31;
+}
+
+.bg-grid {
+  background-image: linear-gradient(to right, #dedacd 1px, transparent 1px),
+    linear-gradient(to bottom, #dedacd 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+html.dark .bg-grid {
+  background-image: linear-gradient(to right, #262b31 1px, transparent 1px),
+    linear-gradient(to bottom, #262b31 1px, transparent 1px);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

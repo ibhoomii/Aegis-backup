@@ -1,0 +1,54 @@
+# =========================
+# Dependencies / caches
+# =========================
+node_modules/
+.next/
+out/
+build/
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# =========================
+# Environment / local config
+# =========================
+.env
+.env*.local
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS / editor files
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+
+# =========================
+# Python generated files
+# =========================
+*.tsbuildinfo
+next-env.d.ts
+
+# =========================
+# Raw ML datasets
+# =========================
+aegis_ml/aegissoc-ml/data/*.txt
+aegis_ml/aegissoc-ml/data/cicids2017/*.csv
+
+# =========================
+# Dataset download markers
+# =========================
+aegis_ml/aegissoc-ml/data/cicids2017/download_done.txt
+
+# =========================
+# Local training/runtime logs
+# =========================
+aegis_ml/aegissoc-ml/src/train_cicids_log.txt
+aegis_ml/aegissoc-ml/src/uvicorn_log.txt
